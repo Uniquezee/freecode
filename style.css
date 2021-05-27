@@ -7,7 +7,7 @@
 }
    .container{
      background-image: url(mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg);
-       background-size: 100%;
+       background-size: cover;
        background-repeat: no-repeat;
        background-position-x: center;
        width: 100%;
@@ -16,6 +16,7 @@
        background-color:#786695;
        overflow: auto;
        margin: 0 10;
+       max-width: 100%;
    }
    form{
        margin: 0 auto;
@@ -24,6 +25,11 @@
        padding: 20px;
        border-radius: 5px;
    }
+   @media (min-width: 480px) {
+    form {
+      padding: 2.5rem;
+    }
+  }
    header{
        padding: 0 0.625rem;
        margin-bottom: 1.875rem;
